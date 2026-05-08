@@ -1,7 +1,7 @@
 version: '3.8'
 services:
   internetbanking:
-    image: trainerreyaz/ib-image:latest
+    image: kiran009/internetbank-image:v1
     ports:
       - "81:80"
     deploy:
@@ -9,7 +9,7 @@ services:
     volumes:
       - /var/lib/internetbanking
   mobilebanking:
-    image: trainerreyaz/mb-image:latest
+    image: kiran009/mob-image:v1
     ports:
       - "82:80"
     deploy:
@@ -17,7 +17,7 @@ services:
     volumes:
       - /var/lib/mobilebanking
   insurance:
-    image: trainerreyaz/insurance-image:latest
+    image: kiran009/insurance-image:v1
     ports:
       - "83:80"
     deploy:
@@ -25,7 +25,7 @@ services:
     volumes:
       - /var/lib/insurance
   loan:
-    image: trainerreyaz/loans-image:latest
+    image: kiran009/lb-image:v1
     ports:
       - "84:80"
     deploy:
