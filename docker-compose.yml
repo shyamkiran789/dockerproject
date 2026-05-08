@@ -1,31 +1,36 @@
 version: '3.8'
+
 services:
+
   internetbanking:
-    image: kiran009/internetbank-image
+    image: kiran0099/internetbank-image
     ports:
       - "81:80"
     deploy:
       replicas: 3
     volumes:
       - /var/lib/internetbanking
+
   mobilebanking:
-    image: kiran009/mob-image
+    image: kiran0099/mob-image
     ports:
       - "82:80"
     deploy:
       replicas: 3
     volumes:
       - /var/lib/mobilebanking
+
   insurance:
-    image: kiran009/insurance-image
+    image: kiran0099/insurance-image
     ports:
       - "83:80"
     deploy:
       replicas: 3
     volumes:
       - /var/lib/insurance
+
   loan:
-    image: kiran009/lb-image
+    image: kiran0099/lb-image
     ports:
       - "84:80"
     deploy:
